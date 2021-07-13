@@ -174,10 +174,10 @@ import matplotlib.pyplot as plt
 
 
 #Quadrilateral vertices
-A = np.array([1,2])
-B = np.array([5,4])
-C = np.array([3,8]) 
-D = np.array([-1,6]) 
+AB = np.array([13])
+BC = np.array([47])
+CD = np.array([45]) 
+DA = np.array([11]) 
 
 #Generating all lines
 x_AB = line_gen(A,B)
