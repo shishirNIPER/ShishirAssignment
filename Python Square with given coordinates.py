@@ -156,8 +156,8 @@ Original file is located at
 https://colab.research.google.com/drive/1DP8IWd951P0PLgYxb-NHBOwitaDHh8M6
 """
 
-#Code by C.Ramya Tulasi
-#May 18, 2021
+#Code by Shishir S. Badave
+#July 19, 2021
 #Drawing a quadrilateral GOLD
 import numpy as np
 import matplotlib.pyplot as plt
@@ -170,32 +170,24 @@ C = np.array([3,8])
 D = np.array([-1,6]) 
 
 import numpy as np
-A = np.array([1, 2])
-B = np.array([5, 4])
 print("Original vectors A and B:")
 print(A)
 print(B)
 print("Inner product of said vectors:")
 print(np.array([1, 2])@np.array([5, 4]))
 
-B = np.array([5, 4])
-C = np.array([3, 8])
-print("Original vectors B and C:")
+print("Original vectors B and C: B@C")
 print(B)
 print(C)
 print("Inner product of said vectors:")
 print(np.array([5, 4])@np.array([3, 8]))
 
-C = np.array([3, 8])
-D = np.array([-1, 6])
 print("Original vectors C and D:")
 print(C)
 print(D)
 print("Inner product of said vectors:")
 print(np.array([3, 8])@np.array([-1, 6]))
 
-D = np.array([-1, 6])
-A = np.array([1, 2])
 print("Original vectors D and A:")
 print(D)
 print(A)
