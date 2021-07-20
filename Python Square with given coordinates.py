@@ -173,26 +173,26 @@ import numpy as np
 print("Original vectors A and B:")
 print(A)
 print(B)
-print("Inner product of said vectors:")
-print(np.array([1, 2])@np.array([5, 4]))
+print("Inner product of said vectors:A@B")
+print(np.array(A)@np.array(B))
 
-print("Original vectors B and C: B@C")
+print("Original vectors B and C:")
 print(B)
 print(C)
-print("Inner product of said vectors:")
-print(np.array([5, 4])@np.array([3, 8]))
+print("Inner product of said vectors:B@C")
+print(np.array(B)@np.array(C))
 
 print("Original vectors C and D:")
 print(C)
 print(D)
-print("Inner product of said vectors:")
-print(np.array([3, 8])@np.array([-1, 6]))
+print("Inner product of said vectors:C@D")
+print(np.array(C)@np.array(D))
 
 print("Original vectors D and A:")
 print(D)
 print(A)
-print("Inner product of said vectors:")
-print(np.array([-1, 6])@np.array([1, 2]))
+print("Inner product of said vectors:D@A")
+print(np.array(D)@np.array(A))
 
 
 #Generating all lines
