@@ -38,17 +38,17 @@
 \usepackage{tfrupee}
 \usepackage[breaklinks=true]{hyperref}
 %\usepackage{stmaryrd}
-\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{tkz-euclide} % loads TikZ and tkz-base
 %\usetkzobj{all}
 \usetikzlibrary{calc,math}
 \usepackage{listings}
-    \usepackage{color}                                            %%
-    \usepackage{array}                                            %%
-    \usepackage{longtable}                                        %%
-    \usepackage{calc}                                             %%
-    \usepackage{multirow}                                         %%
-    \usepackage{hhline}                                           %%
-    \usepackage{ifthen}                                           %%
+    \usepackage{color} %%
+    \usepackage{array} %%
+    \usepackage{longtable} %%
+    \usepackage{calc} %%
+    \usepackage{multirow} %%
+    \usepackage{hhline} %%
+    \usepackage{ifthen} %%
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
 \usepackage{multicol}
@@ -69,7 +69,7 @@
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-\def\inputGnumericTable{}                                 %%
+\def\inputGnumericTable{} %%
 
 \lstset{
 %language=C,
@@ -167,16 +167,12 @@ Show that the points $\vec {A}=\myvec {1\\2},
 There are two basic properties of square-
 \begin{lemma}
 \begin{enumerate}
-
-
-     \item  The angle made by two sides of a square is always 90\degree
-     \item  The diagonals of a square are equal and bisect each other at the right angles
-     \item  If two lines (Say {$\vec{AB}$} and {$\vec{BC}$}) are perpendicular to each   other, The value of \vec{$(A-B)^T$}\vec{$(B-C)$}&=0
-     
+     \item The angle made by two sides of a square is always 90\degree
+     \item The diagonals of a square are equal and bisect each other at the right angles
+     \item If two lines (Say {$\vec{AB}$} and {$\vec{BC}$}) are perpendicular to each other, The value of 
+     $(\vec{A}-\vec{B})^T$ $(\vec{B}-\vec{C})$=0
 \end{enumerate}
 \end{lemma}
-
-
 Let us compute the values of the same----
 \begin{align}
 \vec {A} &=\myvec {1\\2}\\
@@ -188,80 +184,62 @@ Let us compute the values of the same----
 \item
 We know if $AB$ and $BC$ are perpendicular then
 \begin{align}
-\vec{(A-B)^T}\vec{(B-C)}&=0\\
+(\vec{A}-\vec{B})^T(\vec{B}-\vec{C})&=0
 \end{align}
 Then for given vertices 
 \begin{align}
-\vec{(A-B)^T}\vec{(B-C)}=\myvec {-4 & -2}\myvec {2\\-4} = 0
+(\vec{A}-\vec{B})^T(\vec{B}-\vec{C})=\myvec {-4 & -2}\myvec {2\\-4} = 0
 \end{align}
 \item
 Also, if $BC$ and $CD$ are perpendicular then
 \begin{align}
-\vec{(B-C)^T}\vec{(C-D)}&=0\\
+(\vec{B}-\vec{C})^T(\vec{C}-\vec{D})=0
 \end{align}
 Then for given vertices 
 \begin{align}
-\vec{(B-C)^T}\vec{(C-D)}=\myvec {2 & -4}\myvec {4\\2}= 0
+(\vec{B}-\vec{C})^T(\vec{C}-\vec{D})=\myvec {2 & -4}\myvec {4\\2}= 0
 \end{align}
 \item 
 Similarly, if $CD$ and $DA$ are perpendicular then
 \begin{align}
-\vec{(C-D)^T}\vec{(D-A)}&=0\\
+(\vec{C}-\vec{D})^T (\vec{D}-\vec{A}) =0
 \end{align}
 Then for given vertices 
 \begin{align}
-\vec{(C-D)^T}\vec{(D-A)}=\myvec {4 & 2}\myvec {2\\4} = 0
+(\vec{C}-\vec{D})^T (\vec{D}-\vec{A})=\myvec {4 & 2}\myvec {2\\4} = 0
 \end{align}
-
-
 \item
 Similarly, if $DA$ and $AB$ are perpendicular then
 \begin{align}
-\vec{(D-A)^T}\vec{(A-B)}&=0\\
+(\vec{D}-\vec{A})^T (\vec{A}-\vec{B})=0
 \end{align}
 Then for given vertices 
 \begin{align}
-\vec{(D-A)^T}\vec{(A-B)}=\myvec {2 & 4}\myvec {4\\-2}= 0
+(\vec{D}-\vec{A})^T (\vec{A}-\vec{B})=\myvec {2 & 4}\myvec {4\\-2}= 0
 \end{align}
-
 Therefore, The angle between AB and BC, BC and CD, CD and DA , DA and AB is 90\degree
-
 Also, "The diagonals of a square are equal and bisect each other at right angles"
-
-
-
 \item 
 \end{enumerate}
 if $AC$ and $BD$ are diagonals of the square, They must bisect each other at right angles
 \begin{align}
-\vec{(A-C)^T}\vec{(B-D)}&=0\\
+(\vec{A}-\vec{C})^T (\vec{B}-\vec{D})=0
 \end{align}
 Putting the available values
 \begin{align}
-\vec{(A-C)^T}\vec{(B-D)}=\myvec {-2 & 6}\myvec {6\\-2}= 0
+(\vec{A}-\vec{C})^T (\vec{B}-\vec{D})=\myvec {-2 & 6}\myvec {6\\-2}= 0
 \end{align}
-
-
-
-
-
 This fulfills the property that the "The diagonals of a square are equal and bisect each other at right angles" 
-
 Thus it can be claimed that $\vec {A}=\myvec {1\\2},
 \vec {B}=\myvec {5\\4},
 \vec {C}=\myvec {3\\8},
 \vec {C}=\myvec {-1\\6}$ are the vertices of a square.
-
    
 Please see Figure ~\ref{fig:Square ABCD} which verifies that
-
 A,B,C,D form a square
-
-
 \begin{figure}[h!]
-\includegraphics[width=\linewidth]{pysquare2.png}
+\includegraphics[width=\columnwidth]{pysquare2.png}
   \caption{Square ABCD}
   \label{fig:Square ABCD}
 \end{figure}
-
 \end{document}
